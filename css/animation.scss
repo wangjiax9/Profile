@@ -1,0 +1,53 @@
+@mixin animation($anima...){
+    -webkit-animation:$anima;
+    -moz-animation: $anima;
+    -o-animation: $anima;
+    animation: $anima;
+}
+@mixin animaFillMode($mode){
+    -webkit-animation-fill-mode: $mode;
+    -moz-animation-fill-mode: $mode;
+    -o-animation-fill-mode: $mode;
+    animation-fill-mode: $mode;
+}
+@mixin transform($trans...){
+    -webkit-transform: $trans;
+    -moz-transform: $trans;
+    -ms-transform: $trans;
+    -o-transform: $trans;
+    transform: $trans;
+}
+@mixin keyframes($name){
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+}
+$fade-direction:top,right,bottom,left;
+@each $direction in $fade-direction{
+    @include keyframes(fadeIn-#{$direction}){
+        0%{
+            opacity: 0;
+            @if $direction == top{
+                @include transform(translateY(-100px));
+            }@else if $direction == right{
+                @include transform(translateX(100px));
+            }@else if $direction == bottom{
+                @include transform(translateY(100px));
+            }@else if $direction == left{
+                @include transform(translateX(-100px));
+            }
+        }
+        100%{
+            opacity: 1;
+            @include transform(translate(0));
+        }
+    }
+    .fadeIn-#{$direction}{
+        opacity: 0;
+        @include animation(fadeIn-#{$direction} ease 1s 1);
+    }
+}
+

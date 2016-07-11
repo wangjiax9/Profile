@@ -1,0 +1,52 @@
+@import "animation";
+$font-color:#fff;
+$fsize-biger:3rem;
+$fsize-middle:1.8rem;
+html,body,ul,img,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+html{
+    font-size: 62.5%;
+}
+body{background: #000;font-size: 1.2rem;font-family: "microsoft yahei";}
+ul{list-style: none;}
+.animated{
+    @include animaFillMode(both);
+}
+.section{
+    width:calc(100vw);
+    height:calc(100vh); 
+    @for $i from 0 to 5{
+        $c:$i*40;
+        &.s#{$i}{
+            background: linear-gradient(hsla($c,50%,50%,($i+1)*0.1),hsla($c+40,50%,50%,($i+1)*0.2));
+        }
+    }
+}
+.p-base{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    >li{
+        flex:1;  
+        color:$font-color;
+        font-size: $fsize-biger;
+        border-bottom: 1px solid #333333;
+        &:nth-child(even){
+            align-self: flex-end;
+        }
+        dt{
+            display: inline-block;
+        }
+        dd{
+            display: inline-block;
+        }
+    }
+}
+
+
+
