@@ -4,6 +4,24 @@
     -o-animation: $anima;
     animation: $anima;
 }
+@mixin animationDuration($dur){
+    -webkit-animation-duration: $dur;
+    -moz-animation-duration: $dur;
+    -o-animation-duration: $dur;
+    animation-duration: $dur;
+}
+@mixin animationTimeFun($fun){
+    -webkit-animation-timing-function: $fun;
+    -moz-animation-timing-function: $fun;
+    -o-animation-timing-function: $fun;
+    animation-timing-function: $fun;
+}
+@mixin animationName($name){
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+    -o-animation-name: $name;
+    animation-name: $name;
+}
 @mixin animaFillMode($mode){
     -webkit-animation-fill-mode: $mode;
     -moz-animation-fill-mode: $mode;
@@ -24,6 +42,11 @@
     @-moz-keyframes #{$name} {
         @content;
     }
+}
+.animated{
+    @include animationDuration(1s);
+    @include animationTimeFun(ease);
+    @include animaFillMode(both);
 }
 $fade-direction:top,right,bottom,left;
 @each $direction in $fade-direction{
@@ -46,8 +69,20 @@ $fade-direction:top,right,bottom,left;
         }
     }
     .fadeIn-#{$direction}{
-        opacity: 0;
-        @include animation(fadeIn-#{$direction} ease 1s 1);
+        @include animationName(fadeIn-#{$direction});
     }
 }
-
+@include keyframes(zoomIn){
+    0%{
+        @include transform(scale(0.1));
+    }
+    80%{
+        @include transform(scale(1.3));
+    }
+    100%{
+        @include transform(scale(1));
+    }
+}
+.zoomIn{
+    @include animationName(zoomIn);
+}
