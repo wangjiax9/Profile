@@ -66,7 +66,7 @@
 				var pAngel = Math.atan2(p1.y - p0.y, p1.x - p0.x);
 				if(pd < 4000 && lineNum < 1){
 					ctx.beginPath();
-					ctx.strokeStyle = "hsl("+parseInt(Math.random()*220)+",30%,20%)";
+					ctx.strokeStyle = "hsl("+parseInt(Math.random()*220)+",40%,40%)";
 					ctx.moveTo(p0.x,p0.y);
 					ctx.lineTo(p1.x,p1.y);
 					ctx.stroke();

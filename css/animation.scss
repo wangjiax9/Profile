@@ -35,6 +35,13 @@
     -o-transform: $trans;
     transform: $trans;
 }
+@mixin transition($trans...){
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    -ms-transition: $trans;
+    -o-transition: $trans;
+    transition: $trans;
+}
 @mixin keyframes($name){
     @-webkit-keyframes #{$name} {
         @content;
@@ -72,11 +79,22 @@ $fade-direction:top,right,bottom,left;
         @include animationName(fadeIn-#{$direction});
     }
 }
+@include keyframes(fadeIn){
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fadeIn{
+    @include animationName(fadeIn);
+}
 @include keyframes(zoomIn){
     0%{
         @include transform(scale(0.1));
     }
-    80%{
+    70%{
         @include transform(scale(1.3));
     }
     100%{
@@ -85,4 +103,17 @@ $fade-direction:top,right,bottom,left;
 }
 .zoomIn{
     @include animationName(zoomIn);
+    @include animationDuration(.8s);
+}
+@include keyframes(expand-top){
+    0%{
+        height:0;
+    }
+    100%{
+        height:140px;
+    }
+}
+.expand-top{
+    @include transition(all 1s);
+    @include animationName(expand-top);
 }

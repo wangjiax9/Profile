@@ -1,7 +1,9 @@
 @import "animation";
-$font-color:#fff;
-$fsize-biger:3rem;
-$fsize-middle:1.8rem;
+$white-color:#fff;
+$fsize-biger:3.2rem;
+$fsize-big:2.6rem;
+$fsize-middle:2.0rem;
+$fsize-normal:1.4rem;
 @mixin clearfix(){
     &:after{
         content: "";
@@ -16,7 +18,17 @@ $fsize-middle:1.8rem;
     -moz-border-radius: $r;
     border-radius: $r;
 }
-html,body,ul,img,dl,dt,dd{
+@mixin boxShadow($param...){
+    -webkit-box-shadow: $param;
+    -moz-box-shadow: $param;
+    box-shadow: $param;
+}
+@mixin radialGradient($param...){
+    background-image: -webkit-radial-gradient(#{$param});
+    background-image: -moz-radial-gradient(#{$param});
+    background-image: radial-gradient(#{$param});
+}
+html,body,ul,img,dl,dt,dd,h1{
     margin: 0;
     padding: 0;
     border: 0; 
@@ -28,10 +40,24 @@ html{
 }
 body{
     background: #000;
-    font-size: 1.2rem;
+    font-size: $fsize-normal;
     font-family: "microsoft yahei";
+    
 }
+
 ul{list-style: none;}
+.bg{
+    width:calc(100vw);
+    height:calc(100vh);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: -2;
+    background: url(../img/bg.jpg) center no-repeat;
+    background-attachment: fixed;
+    -webkit-filter: blur(2px);
+    filter:blur(2px);
+}
 .cvs-bg{
     position: fixed;
     left:0;
@@ -41,19 +67,29 @@ ul{list-style: none;}
   
 .section{ 
     width:calc(100vw);
-    height:calc(100vh); 
-   
-    @for $i from 0 to 5{
-        $c:$i*40;
+    min-height: calc(25vh);
+    margin-bottom:2rem;
+    position: relative;
+    @for $i from 0 to 7{
         &.s#{$i}{
-            background: linear-gradient(hsla($c,50%,50%,.5),hsla($c+40,50%,50%,.8));
+            background: linear-gradient(rgba(33,33,33,0.7),rgba(50,50,50,0.9));
         }
     }
 }
-.s1{height:auto}
+.s1,.s2{height:auto}
+.s3{
+    height:300px;
+    margin-top: 2rem;
+}
+.p-h{
+    text-align: center;
+    font-size: $fsize-biger;
+    color:$white-color;
+    padding:2rem 0;
+}
 .p-base{
     >li{
-        color:$font-color;
+        color:$white-color;
         font-size: $fsize-biger;
         margin-bottom: 1rem;
         &:nth-child(even){
@@ -81,12 +117,150 @@ ul{list-style: none;}
     width:6rem;
     height:6rem;
     font-size:$fsize-middle;
+    color:$white-color;
     text-align: center;
     line-height: 6rem;
     background: #eee;
     margin:1rem auto;
     @include borderRadius(50%);
+    @include boxShadow(1px 1px 2px #414346,-1px -1px 1px #f1f1f1);
+    &-1{
+        @include radialGradient(#337ab7,#2e6da4);
+    }
+    &-2{
+        @include radialGradient(#449d44,#398439);
+    }
+    &-3{
+        @include radialGradient(#31b0d5,#46b8da);
+    }
 }
-
+.timer-shaft{
+    height:0;
+    background:#2E6DA4; 
+    .content{
+        position: absolute;
+        color: $white-color;
+        font-size:$fsize-big;
+        &-top{ 
+            top:50px;
+            right:10rem;
+        }
+        &-bottom{
+            bottom:50px;
+            left:10rem;
+        }
+    }
+    .stage1{
+        width:20px;
+        height:140px;
+        color:$white-color;
+        background:#e0f0fa;
+        position: absolute;
+        left:4rem;
+        top:0;
+        z-index: 1;
+        .text-top{
+            display: block;
+            position: absolute;
+            top:0;
+            right:-30px;
+        }
+        .text-bottom{
+            display: block;
+            min-width: 60px;
+            position: absolute;
+            bottom:-25px;
+            left:-16px;
+        }
+        .node1{
+            width:30px;
+            height:30px;
+            background: #eee;
+            position: absolute;
+            bottom: -5px;
+            left: -4px;
+            @include borderRadius(50%);
+        }
+    }
+    .stage2{
+        width:auto;
+        border-top: 20px dotted #e0f0fa;
+        margin:0 4rem;
+        position: relative;
+        top:140px;
+        @include transform(rotate(8deg));
+    }
+    .stage3{
+        width:20px;
+        height:140px;
+        color: $white-color;
+        background:#e0f0fa;  
+        position: absolute;
+        right:4rem;
+        bottom:0;
+        z-index: 1;  
+        .text-top{
+            display: block;
+            min-width: 60px;
+            position: absolute;
+            top:-25px;
+            left:0;
+        }
+        .text-bottom{
+            display: block;
+            min-width: 80px;
+            position: absolute;
+            bottom:5px;
+            left:-80px;
+        }
+        .node1{
+            width:30px;
+            height:30px;
+            background: #eee;
+            position: absolute;
+            top: -5px;
+            right: -4px;
+            @include borderRadius(50%);
+        }
+    }
+    
+}
+.p-list{
+    color:$white-color;
+    
+    .p-item{
+        margin: 0 2rem 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dashed #555;
+        .title{
+            font-size: $fsize-big;
+            background: #82828c;
+            @include borderRadius(3px);
+            padding:0.5rem 0.5rem;
+            margin-bottom: 1rem;
+            .sub-title{
+                font-size:$fsize-normal;
+                color:#ddd;
+                margin-left:1rem;
+            }
+        }
+        .content{
+            h3{
+              font-size: $fsize-middle;  
+              margin:.5rem 0;
+            }
+            ul{
+                >li{
+                    color:#eee;
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+        .intro{
+            color:#c7c7c7;
+        }
+    
+    }
+}
 
 

@@ -2,9 +2,9 @@
 	$(function(){
 		var d = ["top","right","bottom","left"];
 		for (var i = 0; i < 8; i++) {
-			var $item = $(".p-base li:first").clone();
+			var $item = $("#baseInfo li:first").clone();
 			$item.find("dl").data("animation","fadeIn-"+d[Math.floor(Math.random()*4)]);
-			$item.appendTo($(".p-base"));
+			$item.appendTo($("#baseInfo"));
 		}
 		$(window).scroll(function(){
 			checkAnimation();
