@@ -117,3 +117,28 @@ $fade-direction:top,right,bottom,left;
     @include transition(all 1s);
     @include animationName(expand-top);
 }
+@include keyframes(change-bg){
+    0%{
+        background-image: url(../img/my0.jpg) ;
+    }
+    30%{
+        background-image: url(../img/my3.jpg);
+    }
+    70%{
+        background-image: url(../img/my1.jpg);
+    }
+    100%{
+        background-image: url(../img/my2.jpg);
+    }
+}
+.chang-bg{
+    @include animation(change-bg linear 2s infinite alternate);
+}
+@include keyframes(svg-dash){
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+.svg-dash{
+    @include animation(svg-dash 2s  ease-in alternate infinite ); 
+}

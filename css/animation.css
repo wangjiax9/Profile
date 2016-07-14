@@ -44,4 +44,18 @@
   100% { height: 140px; } }
 .expand-top { -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; -o-transition: all 1s; transition: all 1s; -webkit-animation-name: expand-top; -moz-animation-name: expand-top; -o-animation-name: expand-top; animation-name: expand-top; }
 
+@-webkit-keyframes change-bg { 0% { background-image: url(../img/my0.jpg); }
+  30% { background-image: url(../img/my3.jpg); }
+  70% { background-image: url(../img/my1.jpg); }
+  100% { background-image: url(../img/my2.jpg); } }
+@-moz-keyframes change-bg { 0% { background-image: url(../img/my0.jpg); }
+  30% { background-image: url(../img/my3.jpg); }
+  70% { background-image: url(../img/my1.jpg); }
+  100% { background-image: url(../img/my2.jpg); } }
+.chang-bg { -webkit-animation: change-bg linear 2s infinite alternate; -moz-animation: change-bg linear 2s infinite alternate; -o-animation: change-bg linear 2s infinite alternate; animation: change-bg linear 2s infinite alternate; }
+
+@-webkit-keyframes svg-dash { 100% { stroke-dashoffset: 0; } }
+@-moz-keyframes svg-dash { 100% { stroke-dashoffset: 0; } }
+.svg-dash { -webkit-animation: svg-dash 2s ease-in alternate infinite; -moz-animation: svg-dash 2s ease-in alternate infinite; -o-animation: svg-dash 2s ease-in alternate infinite; animation: svg-dash 2s ease-in alternate infinite; }
+
 /*# sourceMappingURL=animation.css.map */
