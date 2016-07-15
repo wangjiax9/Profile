@@ -53,7 +53,7 @@ ul{list-style: none;}
     left:0;
     top:0;
     z-index: -2;
-    background: url(../img/bg2.jpg) center no-repeat;
+    background: url("http://r3.ykimg.com/051000005788496E67BC3D7CEA0BECB2") center no-repeat;
     background-attachment: fixed;
     -webkit-filter: blur(2px);
     filter:blur(2px);
@@ -64,11 +64,24 @@ ul{list-style: none;}
     top:0;
     z-index: -1;
 }
-  
+footer{
+    text-align: center;
+    color:#aaa;
+    .contact{
+        margin:0 3.2rem;
+        .phone{
+            
+        }
+        .weix{
+           
+        }
+    }
+}  
 .section{ 
     width:calc(100vw);
-    min-height: calc(25vh);
+    min-height: calc(15vh);
     margin-bottom:10rem;
+    padding-bottom:1rem;
     position: relative;
     @for $i from 0 to 7{
         @if $i == 5{
@@ -81,10 +94,12 @@ ul{list-style: none;}
         
     }
 }
+.s0{padding-bottom: 0;}
 .s1{padding:1.2rem 0;}
 .s3{
     height:300px;
     margin-top: 2rem;
+    padding-bottom: 0;
 }
 
 .p-h{
@@ -96,8 +111,8 @@ ul{list-style: none;}
 .p-self{
     width:calc(100vw);
     height:calc(100vh); 
-    background: url(../img/my0.jpg) center 50% no-repeat;   
-//  background-attachment: fixed;  
+    background: url("http://r2.ykimg.com/051000005788498D67BC3D3AD10A0D2C") center 50% no-repeat;   
+    background-attachment: fixed;  
 }
 #linesvg{
     width:calc(100vw);
@@ -189,6 +204,7 @@ ul{list-style: none;}
         .t2{
             font-size: $fsize-middle;
             color:#c7c7c7;
+            margin-top: .8rem;
         }
     }
     .stage1{
@@ -288,17 +304,18 @@ ul{list-style: none;}
         .content{
             h3{
               font-size: $fsize-middle;  
-              margin:.5rem 0;
+              margin:.8rem 0;
             }
             ul{
                 >li{
                     color:#eee;
-                    margin-bottom: .3rem;
+                    margin-bottom: .8rem;
                 }
             }
         }
         .intro{
             color:#c7c7c7;
+            line-height: 1.8rem;
         }
     
     }
@@ -339,5 +356,7 @@ ul{list-style: none;}
         
     }
 }
-
+.p-quotation{
+    margin:0 3.2rem;
+}
 

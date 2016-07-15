@@ -119,16 +119,16 @@ $fade-direction:top,right,bottom,left;
 }
 @include keyframes(change-bg){
     0%{
-        background-image: url(../img/my0.jpg) ;
+        background-image: url("http://r2.ykimg.com/051000005788498D67BC3D3AD10A0D2C") ;
     }
     30%{
-        background-image: url(../img/my3.jpg);
+        background-image: url("http://r3.ykimg.com/051000005788498E67BC3D7CB808DE7D");
     }
     70%{
-        background-image: url(../img/my1.jpg);
+        background-image: url("http://r3.ykimg.com/051000005788498D67BC3D3AD2086959");
     }
     100%{
-        background-image: url(../img/my2.jpg);
+        background-image: url("http://r3.ykimg.com/051000005788498E67BC3D7CB6045430");
     }
 }
 .chang-bg{
