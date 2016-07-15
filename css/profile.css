@@ -66,6 +66,9 @@ body { background: #000; font-size: 1.4rem; font-family: "microsoft yahei"; }
 
 ul { list-style: none; }
 
+a { color: #acaafb; }
+a:hover { color: #6e6bd6; }
+
 .bg { width: calc(100vw); height: calc(100vh); position: fixed; left: 0; top: 0; z-index: -2; background: url("http://r3.ykimg.com/051000005788496E67BC3D7CEA0BECB2") center no-repeat; background-attachment: fixed; -webkit-filter: blur(2px); filter: blur(2px); }
 
 .cvs-bg { position: fixed; left: 0; top: 0; z-index: -1; }
@@ -126,6 +129,8 @@ footer .contact { margin: 0 3.2rem; }
 .timer-shaft .stage3 .node1 { width: 30px; height: 30px; background: #eee; position: absolute; top: -5px; right: -4px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
 
 .p-list { color: #fff; }
+.p-list ol.disc { list-style-type: disc; }
+.p-list ol.disc > li { margin: 1rem 0; }
 .p-list .p-item { margin: 0 2rem 2rem; padding-bottom: 1rem; border-bottom: 1px dashed #555; }
 .p-list .p-item .title { font-size: 2.6rem; background: #82828c; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 0.5rem 0.5rem; margin-bottom: 1rem; }
 .p-list .p-item .title .sub-title { font-size: 1.4rem; color: #ddd; margin-left: 1rem; }

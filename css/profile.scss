@@ -46,6 +46,13 @@ body{
 }
 
 ul{list-style: none;}
+a{
+    color:#acaafb;
+    &:hover{
+        color:#6e6bd6;
+    }
+}
+
 .bg{
     width:calc(100vw);
     height:calc(100vh);
@@ -284,7 +291,12 @@ footer{
 }
 .p-list{
     color:$white-color;
-    
+    ol.disc{
+        list-style-type: disc;
+        >li{
+            margin:1rem 0;
+        }
+    }
     .p-item{
         margin: 0 2rem 2rem;
         padding-bottom: 1rem;
