@@ -8,8 +8,10 @@
 		<meta content="black" name="apple-mobile-web-app-status-bar-style">     
 		<meta content="telephone=no" name="format-detection">
 		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>-->
-		<link rel="stylesheet" type="text/css" href="http://r2.ykimg.com/051000005788BEC567BC3D4020004067.css"/>
-		
+		<!--<link rel="stylesheet" type="text/css" href="http://r2.ykimg.com/051000005788BEC567BC3D4020004067.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/profile.css"/>
+		<style type="text/css">
+		</style>
 		<script type="text/javascript">
 			!(function() {
 				var _self = this;
@@ -31,261 +33,264 @@
 	</head>
 	<body>
 		<div class="bg"></div>
+		<canvas class="cvs-stars-bg" id="cvStarsBg"></canvas>
 		<canvas class="cvs-bg" id="cvsBg"></canvas>
-		<section class="section s0">
-			<div class="p-self animated chang-bg" id="myPortrait"> 
-				 <svg  id="linesvg">
-					<g>
-						<text class="animated svg-dash" x="50" y="100" textLength="300">我是王家龙</text>
-					</g>
-				</svg>
-			</div>
-		</section>
-		<section class="section s1">
-			<ul class="p-base" id="baseInfo">
-				<li>
-					<dl class="animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<dt><i class="icon-user-md"></i>性别：</dt>
-						<dd>♂ 男</dd> 
-					</dl>
-				</li>
-				<li>
-					<dl class="animated" data-animation="fadeIn-right" style="opacity: 0;">
-						<dt><i class="icon-home"></i>现居地：</dt>
-						<dd>北京</dd> 
-					</dl>
-				</li>
-				<li>
-					<dl class="animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<dt><i class="icon-calendar"></i>出生：</dt>
-						<dd>19870417</dd> 
-					</dl>
-				</li>
-				<li>
-					<dl class="animated" data-animation="fadeIn-right" style="opacity: 0;">
-						<dt><i class="icon-globe"></i>籍贯：</dt>
-						<dd>贵州</dd> 
-					</dl>
-				</li>
-				<li>
-					<dl class="animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<dt><i class="icon-building"></i>毕业学校：</dt>
-						<dd>贵州大学</dd> 
-					</dl>
-				</li>
-				<li>
-					<dl class="animated" data-animation="fadeIn-right" style="opacity: 0;">
-						<dt><i class="icon-wrench"></i>专业：</dt>
-						<dd>计算机科学与技术</dd> 
-					</dl>
-				</li>
-				<li>
-					<dl class="animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<dt><i class="icon-envelope"></i>E-mail：</dt>
-						<dd style="font-size:2.4rem;">wangjialong945@foxmail.com</dd> 
-					</dl>
-				</li>
-			</ul>
-		</section>
-		<section class="section s2">
-			<h2 class="p-h">我擅长和了解的前端技能</h2>
-			<ul class="p-skill">
-				<li class="animated" data-animation="zoomIn" data-delay="0.2s"><span class="p-c p-c-1">HTML5</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.4s"><span class="p-c p-c-1">CSS3</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.6s"><span class="p-c p-c-1">Javascript</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.8s"><span class="p-c p-c-1">Bootstrap</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.2s"><span class="p-c p-c-1">jQuery</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.4s"><span class="p-c p-c-1">SASS/LESS</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.6s"><span class="p-c p-c-2">Canvas</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.8s"><span class="p-c p-c-2">SVG</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.2s"><span class="p-c p-c-2">GIT</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.4s"><span class="p-c p-c-3">ES6</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.6s"><span class="p-c p-c-3">Webpack</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.8s"><span class="p-c p-c-3">React</span></li>
-			</ul>
-			<h2 class="p-h">我擅长的后端技能</h2>
-			<ul class="p-skill">
-				<li class="animated" data-animation="zoomIn" data-delay="0.2s"><span class="p-c p-c-1">JAVA</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.4s"><span class="p-c p-c-1">ORACLE</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.6s"><span class="p-c p-c-1">MYSQL</span></li>
-			</ul>
-			<h2 class="p-h">其他</h2>
-			<ul class="p-skill">
-				<li class="animated" data-animation="zoomIn" data-delay="0.2s"><span class="p-c p-c-1">SVN</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.4s"><span class="p-c p-c-1">Axure RP</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.6s"><span class="p-c p-c-1">UML</span></li>
-				<li class="animated" data-animation="zoomIn" data-delay="0.8s"><span class="p-c p-c-1">PS</span></li>
-			</ul>
-			<div class="p-list">
-				<ol class="disc">
-					<li>github实验室：<a href="https://github.com/wangjiax9">https://github.com/wangjiax9</a></li>
-					<li>博客园博客：<a href="http://www.cnblogs.com/specter45/">http://www.cnblogs.com/specter45/</a></li>
-				</ol>
-			</div>
-		</section>
-		<section class="section s3">
-			<div class="timer-shaft">
-				<div class="stage1 animated" data-animation="expand-top">
-					<span class="text-top">至今</span>
-					<span class="text-bottom" style="width:70px;">2015年8月</span>
-					<span class="node1"></span>
+		<div class="container">
+			<section class="section s0">
+				<div class="p-self animated chang-bg" id="myPortrait"> 
+					 <svg  id="linesvg">
+						<g>
+							<text class="animated svg-dash" x="50" y="100" textLength="300">我是王家龙</text>
+						</g>
+					</svg>
 				</div>
-				<div class="stage2 animated" data-animation="fadeIn" data-delay="0.25s" style="opacity: 0;"></div>
-				<div class="stage3 animated" data-animation="expand-top" data-delay="0.5s">
-					<span class="text-top" style="width:70px;">2015年6月</span>
-					<span class="text-bottom">2012年6月</span>
-					<span class="node1"></span>
+			</section>
+			<section class="section s1">
+				<ul class="p-base" id="baseInfo">
+					<li>
+						<dl class="animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<dt><i class="icon-user-md"></i>性别：</dt>
+							<dd>♂ 男</dd> 
+						</dl>
+					</li>
+					<li>
+						<dl class="animated" data-animation="fadeIn-right" data-delay="0.2s" style="opacity: 0;">
+							<dt><i class="icon-home"></i>现居地：</dt>
+							<dd>北京</dd> 
+						</dl>
+					</li>
+					<li>
+						<dl class="animated" data-animation="fadeIn-left" data-delay="0.4s" style="opacity: 0;">
+							<dt><i class="icon-calendar"></i>出生：</dt>
+							<dd>19870417</dd> 
+						</dl>
+					</li>
+					<li>
+						<dl class="animated" data-animation="fadeIn-right" data-delay="0.6s" style="opacity: 0;">
+							<dt><i class="icon-globe"></i>籍贯：</dt>
+							<dd>贵州</dd> 
+						</dl>
+					</li>
+					<li>
+						<dl class="animated" data-animation="fadeIn-left" data-delay="0.8s" style="opacity: 0;">
+							<dt><i class="icon-building"></i>毕业学校：</dt>
+							<dd>贵州大学</dd> 
+						</dl>
+					</li>
+					<li>
+						<dl class="animated" data-animation="fadeIn-right" data-delay="1s" style="opacity: 0;">
+							<dt><i class="icon-wrench"></i>专业：</dt>
+							<dd>计算机科学与技术</dd> 
+						</dl>
+					</li>
+					<li>
+						<dl class="animated" data-animation="fadeIn-left" data-delay="1.2s" style="opacity: 0;">
+							<dt><i class="icon-envelope"></i>E-mail：</dt>
+							<dd style="font-size:2.4rem;">wangjialong945@foxmail.com</dd> 
+						</dl>
+					</li>
+				</ul>
+			</section>
+			<section class="section s2">
+				<h2 class="p-h">我擅长和了解的前端技能</h2>
+				<ul class="p-skill">
+					<li class="animated" data-animation="zoomIn" data-delay="0.2s" style="opacity: 0;"><span class="p-c p-c-1">HTML5</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.4s" style="opacity: 0;"><span class="p-c p-c-1">CSS3</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.6s" style="opacity: 0;"><span class="p-c p-c-1">Javascript</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.8s" style="opacity: 0;"><span class="p-c p-c-1">Bootstrap</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.2s" style="opacity: 0;"><span class="p-c p-c-1">jQuery</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.4s" style="opacity: 0;"><span class="p-c p-c-1">SASS/LESS</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.6s" style="opacity: 0;"><span class="p-c p-c-2">Canvas</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.8s" style="opacity: 0;"><span class="p-c p-c-2">SVG</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.2s" style="opacity: 0;"><span class="p-c p-c-2">GIT</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.4s" style="opacity: 0;"><span class="p-c p-c-3">ES6</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.6s" style="opacity: 0;"><span class="p-c p-c-3">Webpack</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.8s" style="opacity: 0;"><span class="p-c p-c-3">React</span></li>
+				</ul>
+				<h2 class="p-h">我擅长的后端技能</h2>
+				<ul class="p-skill">
+					<li class="animated" data-animation="zoomIn" data-delay="0.2s" style="opacity: 0;"><span class="p-c p-c-1">JAVA</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.4s" style="opacity: 0;"><span class="p-c p-c-1">ORACLE</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.6s" style="opacity: 0;"><span class="p-c p-c-1">MYSQL</span></li>
+				</ul>
+				<h2 class="p-h">其他</h2>
+				<ul class="p-skill">
+					<li class="animated" data-animation="zoomIn" data-delay="0.2s" style="opacity: 0;"><span class="p-c p-c-1">SVN</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.4s" style="opacity: 0;"><span class="p-c p-c-1">Axure RP</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.6s" style="opacity: 0;"><span class="p-c p-c-1">UML</span></li>
+					<li class="animated" data-animation="zoomIn" data-delay="0.8s" style="opacity: 0;"><span class="p-c p-c-1">PS</span></li>
+				</ul>
+				<div class="p-list">
+					<ol class="disc">
+						<li>github实验室：<a href="https://github.com/wangjiax9">https://github.com/wangjiax9</a></li>
+						<li>博客园博客：<a href="http://www.cnblogs.com/specter45/">http://www.cnblogs.com/specter45/</a></li>
+					</ol>
 				</div>
-				<div class="content content-top animated" data-animation="fadeIn-right" data-delay="1s" style="opacity: 0;">
-					<div class="t1">合一集团优酷土豆</div>
-					<div class="t2">担任主站开发团队前端工程师</div>
-				</div> 
-				<div class="content content-bottom animated" data-animation="fadeIn-left" data-delay="1.25s" style="opacity: 0;"> 
-					<div class="t1">北京高迈致远信息技术有限公司</div>
-					<div class="t2">担任前端工程师、JAVA开发工程师，兼任项目经理</div>
+			</section>
+			<section class="section s3">
+				<div class="timer-shaft">
+					<div class="stage1 animated" data-animation="expand-top">
+						<span class="text-top">至今</span>
+						<span class="text-bottom" style="width:70px;">2015年8月</span>
+						<span class="node1"></span>
+					</div>
+					<div class="stage2 animated" data-animation="fadeIn" data-delay="0.25s" style="opacity: 0;"></div>
+					<div class="stage3 animated" data-animation="expand-top" data-delay="0.5s">
+						<span class="text-top" style="width:70px;">2015年6月</span>
+						<span class="text-bottom">2012年6月</span>
+						<span class="node1"></span>
+					</div>
+					<div class="content content-top animated" data-animation="fadeIn-right" data-delay="1s" style="opacity: 0;">
+						<div class="t1">合一集团优酷土豆</div>
+						<div class="t2">担任主站开发团队前端工程师</div>
+					</div> 
+					<div class="content content-bottom animated" data-animation="fadeIn-left" data-delay="1.25s" style="opacity: 0;"> 
+						<div class="t1">北京高迈致远信息技术有限公司</div>
+						<div class="t2">担任前端工程师、JAVA开发工程师，兼任项目经理</div>
+					</div>
 				</div>
-			</div>
-			
-		</section>
-		<section class="section s4">
-			<div class="p-h">项目经验介绍</div>
-			<div class="p-list">
-				<div class="p-item">
-					<div class="title">优酷主站开发<span class="sub-title">（2015-8至今）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1. 主要负责优酷播放页面的前端开发，优化。</li>
-							<li>2. 使用CMS管理平台搭建频道页面，专题页面。</li>
-							<li>3. 使用html，css，less，javascript，jquery，git等前端主要开发技术。</li>
-							<li>4. 积极尝试使用前端新兴技术，如ES6，react，webpack。</li>
-						</ul>
+				
+			</section>
+			<section class="section s4">
+				<div class="p-h">项目经验介绍</div>
+				<div class="p-list">
+					<div class="p-item">
+						<div class="title">优酷主站开发<span class="sub-title">（2015-8至今）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1. 主要负责优酷播放页面的前端开发，优化。</li>
+								<li>2. 使用CMS管理平台搭建频道页面，专题页面。</li>
+								<li>3. 使用html，css，less，javascript，jquery，git等前端主要开发技术。</li>
+								<li>4. 积极尝试使用前端新兴技术，如ES6，react，webpack。</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
+							简介：主要参与优酷PC端主站前端开发及优化。业务范围：PC端播放页、节目页、专题页、首页、我的收藏、播放记录等</div>
 					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
-						简介：主要参与优酷PC端主站前端开发及优化。业务范围：PC端播放页、节目页、专题页、首页、我的收藏、播放记录等</div>
+					<div class="p-item">
+						<div class="title">赢在志愿公众号<span class="sub-title">（2015-05至2015-06）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1．前端开发：负责所有功能页面的开发，包括交互和UI。</li>
+								<li>2．兼任项目经理，参与需求分析与设计，与产品经理沟通需求，根据需求设计Axure原型。</li>
+								<li>3．概要设计，根据需求抽象出对象，分析与设计得出E-R关系图，设计数据库结构。</li>
+								<li>4．制定里程碑计划，任务分解，任务分配。</li>
+								<li>5．部署发布系统，使系统能在微信公众号中访问。</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">简介：高考填报志愿你困惑吗？纠结吗？不要着急，赢在志愿是帮助你填报高考志愿的神器，预估你的分数，选择你向往的城市，赢在志愿将为你精准推荐大学以及专业。</div>
+					</div>
+					<div class="p-item">
+						<div class="title">翻转教育平台<span class="sub-title">（2014-09至2015-05）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1．前端开发：课程表模块，课程设计模块等。</li>
+								<li>2．后端开发：课程表模块，课程设计模块等。</li>
+								<li>3．兼任项目经理，参与需求分析与设计，根据需求设计Axure原型</li>
+								<li>4．概要设计，根据需求抽象出对象，分析与设计得出E-R关系图，设计数据库结构。</li>
+								<li>5．制定里程碑计划，任务分解，任务分配</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
+							简介：翻转教育平台具有实战引领化的特征。支持基本知识的自主学习、应用技能微案例精细化训练、大型项目的综合实战、以及就业驱动的分析管理。</div>
+					</div>
+					<div class="p-item">
+						<div class="title">精准化就业服务平台<span class="sub-title">（2014-05至2014-09）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1．负责平台标准职位和技能模块前端和后端开发。</li>
+								<li>2．用户首页设计。</li>
+								<li>3．简历管理模块前端和后端开发。</li>
+								<li>4．精准就业推荐模块前端和后端开发。</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
+							简介：ETPI精准化就业服务平台基于国内就业市场的供需矛盾，传统职业教育与市场人才需求间的矛盾，通过模式技术创新改革促进就业，最终形成便捷高效的精准化就业服务平台。</div>
+					</div>
+					<div class="p-item">
+						<div class="title">QA平台<span class="sub-title">（2013-12至2014-02）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1．前端开发：负责发布任务到审核任务的整个流程功能开发。</li>
+								<li>2．后端开发：负责发布任务到审核任务的整个流程功能开发。</li>
+								<li>3．兼任项目经理，概要设计，根据需求抽象出对象，分析与设计得出E-R关系图，设计数据库结构。</li>
+								<li>4．部署发布系统，确保系统能正常访问。</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
+							简介：根据产品外包管理及院校合作项目需要，为我司外包项目线上产品流及院校合作产教融合模块提供便利的线上产品交付及审核，有效的减少沟通及运营成本，特设计实施此“项目管理平台”。</div>
+					</div>
+					<div class="p-item">
+						<div class="title">苏宁电子价签系统<span class="sub-title">（2013-11至2013-12）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1．负责门店系统与电子价签的数据传输功能开发与调试</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
+							简介：电子价签系统用于将价格信息实时推送到苏宁各个门店的价签中，使得门店里商品价格可以实时的与苏宁易购的网上价格保持一致。</div>
+					</div>
+					<div class="p-item">
+						<div class="title">贵州省国土资源厅电子政务平台之矿业权系统<span class="sub-title">（2012-11至2013-11）</span></div>
+						<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<h3>职责：</h3>
+							<ul>
+								<li>1．担任矿权组组长。</li>
+								<li>2．跟客户沟通需求。</li>
+								<li>3．按计划分配和实施任务。</li>
+								<li>4．负责探矿权审批流程模块，探矿权审批流程模块功能开发。</li>
+							</ul>
+						</div>
+						<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
+							简介：矿业权系统是贵州省国土资源管理信息系统的重要组成部分之一，处理矿产资源的探矿权、采矿权各种申请登记业务的办理，完成矿业权年检、年报、到期检查，统计查询等功能。依据矿业权业务管理的工作流程，对探矿权、采矿权登记信息进行一体化的流程化办理，与办公OA系统紧密结合，实现矿业权信息登记、审批、发证的全程无纸化办公，解决多级发证引起的矿区设置重叠和矿业权纠纷，并完成矿业权的生命周期回溯。</div>
+					</div>
 				</div>
-				<div class="p-item">
-					<div class="title">赢在志愿公众号<span class="sub-title">（2015-05至2015-06）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1．前端开发：负责所有功能页面的开发，包括交互和UI。</li>
-							<li>2．兼任项目经理，参与需求分析与设计，与产品经理沟通需求，根据需求设计Axure原型。</li>
-							<li>3．概要设计，根据需求抽象出对象，分析与设计得出E-R关系图，设计数据库结构。</li>
-							<li>4．制定里程碑计划，任务分解，任务分配。</li>
-							<li>5．部署发布系统，使系统能在微信公众号中访问。</li>
-						</ul>
-					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">简介：高考填报志愿你困惑吗？纠结吗？不要着急，赢在志愿是帮助你填报高考志愿的神器，预估你的分数，选择你向往的城市，赢在志愿将为你精准推荐大学以及专业。</div>
-				</div>
-				<div class="p-item">
-					<div class="title">翻转教育平台<span class="sub-title">（2014-09至2015-05）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1．前端开发：课程表模块，课程设计模块等。</li>
-							<li>2．后端开发：课程表模块，课程设计模块等。</li>
-							<li>3．兼任项目经理，参与需求分析与设计，根据需求设计Axure原型</li>
-							<li>4．概要设计，根据需求抽象出对象，分析与设计得出E-R关系图，设计数据库结构。</li>
-							<li>5．制定里程碑计划，任务分解，任务分配</li>
-						</ul>
-					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
-						简介：翻转教育平台具有实战引领化的特征。支持基本知识的自主学习、应用技能微案例精细化训练、大型项目的综合实战、以及就业驱动的分析管理。</div>
-				</div>
-				<div class="p-item">
-					<div class="title">精准化就业服务平台<span class="sub-title">（2014-05至2014-09）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1．负责平台标准职位和技能模块前端和后端开发。</li>
-							<li>2．用户首页设计。</li>
-							<li>3．简历管理模块前端和后端开发。</li>
-							<li>4．精准就业推荐模块前端和后端开发。</li>
-						</ul>
-					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
-						简介：ETPI精准化就业服务平台基于国内就业市场的供需矛盾，传统职业教育与市场人才需求间的矛盾，通过模式技术创新改革促进就业，最终形成便捷高效的精准化就业服务平台。</div>
-				</div>
-				<div class="p-item">
-					<div class="title">QA平台<span class="sub-title">（2013-12至2014-02）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1．前端开发：负责发布任务到审核任务的整个流程功能开发。</li>
-							<li>2．后端开发：负责发布任务到审核任务的整个流程功能开发。</li>
-							<li>3．兼任项目经理，概要设计，根据需求抽象出对象，分析与设计得出E-R关系图，设计数据库结构。</li>
-							<li>4．部署发布系统，确保系统能正常访问。</li>
-						</ul>
-					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
-						简介：根据产品外包管理及院校合作项目需要，为我司外包项目线上产品流及院校合作产教融合模块提供便利的线上产品交付及审核，有效的减少沟通及运营成本，特设计实施此“项目管理平台”。</div>
-				</div>
-				<div class="p-item">
-					<div class="title">苏宁电子价签系统<span class="sub-title">（2013-11至2013-12）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1．负责门店系统与电子价签的数据传输功能开发与调试</li>
-						</ul>
-					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
-						简介：电子价签系统用于将价格信息实时推送到苏宁各个门店的价签中，使得门店里商品价格可以实时的与苏宁易购的网上价格保持一致。</div>
-				</div>
-				<div class="p-item">
-					<div class="title">贵州省国土资源厅电子政务平台之矿业权系统<span class="sub-title">（2012-11至2013-11）</span></div>
-					<div class="content animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<h3>职责：</h3>
-						<ul>
-							<li>1．担任矿权组组长。</li>
-							<li>2．跟客户沟通需求。</li>
-							<li>3．按计划分配和实施任务。</li>
-							<li>4．负责探矿权审批流程模块，探矿权审批流程模块功能开发。</li>
-						</ul>
-					</div>
-					<div class="intro animated" data-animation="fadeIn-right" style="opacity: 0;">
-						简介：矿业权系统是贵州省国土资源管理信息系统的重要组成部分之一，处理矿产资源的探矿权、采矿权各种申请登记业务的办理，完成矿业权年检、年报、到期检查，统计查询等功能。依据矿业权业务管理的工作流程，对探矿权、采矿权登记信息进行一体化的流程化办理，与办公OA系统紧密结合，实现矿业权信息登记、审批、发证的全程无纸化办公，解决多级发证引起的矿区设置重叠和矿业权纠纷，并完成矿业权的生命周期回溯。</div>
-				</div>
-			</div>
-		</section>
-		<section class="section s5">
-			<div class="p-h">兴趣嗜好</div>
-			<ul class="p-thumb">
-				<li>
-					<div class="hobby animated" data-animation="fadeIn-right" style="opacity: 0;">
-						<img src="http://r2.ykimg.com/051000005788496C67BC3D3A83032CB4" /><span class="text">游戏</span>
-					</div>
-				</li>
-				<li>
-					<div class="hobby hobby-left animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<img src="http://r1.ykimg.com/051000005788496C67BC3D7CED0CD831" /><span class="text">羽毛球</span>
-					</div>
-				</li>
-				<li>
-					<div class="hobby animated" data-animation="fadeIn-right" style="opacity: 0;">
-						<img src="http://r3.ykimg.com/051000005788496D67BC3D3A8B05A452" /><span class="text">阅读</span>
-					</div>
-				</li>
-				<li>
-					<div class="hobby hobby-left animated" data-animation="fadeIn-left" style="opacity: 0;">
-						<img src="http://r3.ykimg.com/051000005788496E67BC3D7CF00310E7" /><span class="text">综艺</span>
-					</div>
-				</li>
-				<li>
-					<div class="hobby animated" data-animation="fadeIn-right" style="opacity: 0;">
-						<img src="http://r2.ykimg.com/051000005788496D67BC3D3A840D8245" /><span class="text">影视</span>
-					</div>
-				</li>
-				<li>
-					<div class="hobby hobby-left animated" data-animation="fadeIn-bottom" style="opacity: 0;">
-						<img src="http://r2.ykimg.com/051000005788496D67BC3D7CEF0198AB" /><span class="text">摄影</span>
-					</div>
-				</li>
-			</ul>
-		</section>
-		<section class="section s6">
-			<div class="p-h p-quotation">能激励你，温暖你，感动你的，不是励志语录或心灵鸡汤，而是与身边积极、充满正能量的人同行</div>
-		</section>
+			</section>
+			<section class="section s5">
+				<div class="p-h">兴趣嗜好</div>
+				<ul class="p-thumb">
+					<li>
+						<div class="hobby animated" data-animation="fadeIn-right" style="opacity: 0;">
+							<img src="http://r2.ykimg.com/051000005788496C67BC3D3A83032CB4" /><span class="text">游戏</span>
+						</div>
+					</li>
+					<li>
+						<div class="hobby hobby-left animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<img src="http://r1.ykimg.com/051000005788496C67BC3D7CED0CD831" /><span class="text">羽毛球</span>
+						</div>
+					</li>
+					<li>
+						<div class="hobby animated" data-animation="fadeIn-right" style="opacity: 0;">
+							<img src="http://r3.ykimg.com/051000005788496D67BC3D3A8B05A452" /><span class="text">阅读</span>
+						</div>
+					</li>
+					<li>
+						<div class="hobby hobby-left animated" data-animation="fadeIn-left" style="opacity: 0;">
+							<img src="http://r3.ykimg.com/051000005788496E67BC3D7CF00310E7" /><span class="text">综艺</span>
+						</div>
+					</li>
+					<li>
+						<div class="hobby animated" data-animation="fadeIn-right" style="opacity: 0;">
+							<img src="http://r2.ykimg.com/051000005788496D67BC3D3A840D8245" /><span class="text">影视</span>
+						</div>
+					</li>
+					<li>
+						<div class="hobby hobby-left animated" data-animation="fadeIn-bottom" style="opacity: 0;">
+							<img src="http://r2.ykimg.com/051000005788496D67BC3D7CEF0198AB" /><span class="text">摄影</span>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="section s6">
+				<div class="p-h p-quotation">能激励你，温暖你，感动你的，不是励志语录或心灵鸡汤，而是与身边积极、充满正能量的人同行</div>
+			</section>
+		</div>
 		<footer>
 			<div class="contact">
 				<p class="phone">手机：18273274012</p>
@@ -298,27 +303,36 @@
 		</footer>
 		<script src="http://r4.ykimg.com/0510000055DBD90F67BC3D6A3E03F376.js" type="text/javascript" charset="utf-8" zhu="jquery.2.1.3.js"></script>
 		<script src="http://r2.ykimg.com/051000005788AB3967BC3D3B96039963.js " type="text/javascript" charset="utf-8" zhu="cvs-bg.js"></script>
+		<script src="js/cvs-stars-bg.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			(function(){
+				var checkCount = 0;
+				var scrollSize = 500;
 				$(function(){
 					checkAnimation();
-					$(window).scroll(function(){
-						checkAnimation();
+					$(window).scroll(function(e){
+						var sTop = $(document.body).scrollTop();
+						if(sTop > scrollSize * checkCount){
+							checkAnimation(sTop);
+						}
 					});
 				});
-				function checkAnimation(){
+				function checkAnimation(sTop){
+					checkCount ++;
 					$("[data-animation]").each(function(){
 						var h = $(window).height();
-						var st = $(document.body).scrollTop();
 						var ot = $(this).offset().top ;
-						if(ot < h+st){
+						if(ot < h+sTop){
+							if($(this).data("delay") != undefined){
+								$(this).css("animation-delay",$(this).data("delay"));
+							}
 							$(this).addClass($(this).data("animation"));
 						}
 					});
-					$("[data-delay]").each(function(){
-						var delay = $(this).data("delay");
-						$(this).css("animation-delay",delay);
-					});
+//					$("[data-delay]").each(function(){
+//						var delay = $(this).data("delay");
+//						$(this).css("animation-delay",delay);
+//					});
 				}
 				
 			})();

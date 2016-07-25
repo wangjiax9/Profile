@@ -92,12 +92,14 @@ $fade-direction:top,right,bottom,left;
 }
 @include keyframes(zoomIn){
     0%{
+        opacity: 0;
         @include transform(scale(0.1));
     }
     70%{
         @include transform(scale(1.3));
     }
     100%{
+        opacity: 1;
         @include transform(scale(1));
     }
 }
