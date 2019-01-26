@@ -7,7 +7,7 @@
 	function checkAnimation(){
 		$("[data-animation]").each(function(){
 			var h = $(window).height();
-			var st = $(document.body).scrollTop();
+			var st = $("html, body").scrollTop();
 			var ot = $(this).offset().top ;
 			if(ot < h+st){
 				$(this).addClass($(this).data("animation"));
